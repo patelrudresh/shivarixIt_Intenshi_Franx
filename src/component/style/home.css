@@ -1,0 +1,186 @@
+/* MAIN */
+.home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /* padding: 60px 40px; */
+
+  background-image: url('../../assets/bg1.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+   /* opacity: 0; */
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.3s; 
+}
+ .animate-home {
+  animation: fadeSlideUp 1s ease forwards;
+  animation-delay: 1s;
+} 
+
+
+.left {
+  max-width: 500px;
+  margin-top: -12rem;
+}
+
+/* BADGE BOX */
+.badge-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  border-radius: 30px;
+
+  /* background: rgba(255, 255, 255, 0.9); */
+  margin-bottom: 15px;
+
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.08); */
+}
+
+.badge {
+  width: 70px;
+}
+
+.invested {
+  font-weight: 600;
+  font-style: inherit;
+  color: #2a8f51;
+}
+
+/* TEXT */
+.left h1 {
+ font-weight: bold;
+ font-size: 40px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+/* FEATURES */
+.features p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  color: #444;
+}
+
+.features img {
+  width: 18px;
+}
+
+/* RATING */
+.rating {
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.divider {
+  margin: 0 8px;
+  color: #999;
+}
+
+/* BUTTONS */
+.download-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.store-btn {
+  width: 150px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.store-btn:hover {
+  transform: scale(1.05);
+}
+
+/* RIGHT */
+.right img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* LOGO SECTION */
+.logo-section {
+  width: 100%;
+  text-align: center;
+  margin-top: -180px;
+}
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  overflow-x: auto;
+}
+
+.logo-row img {
+  height: 30px;
+  opacity: 0.7;
+}
+
+/* 📱 TABLET */
+@media (max-width: 992px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+  
+  margin-top: 80px;  /* navbar ke niche space */
+
+  }
+
+  .right {
+    margin-top: 30px;
+  }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .home {
+    padding: 40px 20px;
+      margin-top: 80px;  /* navbar ke niche space */
+
+  }
+
+  .left h1 {
+    font-size: 28px;
+  }
+
+  .download-buttons {
+    justify-content: center;
+  }
+
+  .store-btn {
+    width: 130px;
+  }
+
+  .logo-row img {
+    height: 25px;
+  }
+}
+
+/* 📱 SMALL MOBILE */
+@media (max-width: 480px) {
+  .home{
+      margin-top: 120px;  /* navbar ke niche space */
+
+  }
+  .left h1 {
+    font-size: 22px;
+    
+  }
+
+  .store-btn {
+    width: 110px;
+  }
+}

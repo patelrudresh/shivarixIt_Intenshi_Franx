@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;   
+  align-items: center;
+  padding: 15px 30px;
+}
+
+/* LOGO */
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+/* RIGHT */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* BUTTON */
+.download-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #227e7e;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #89b2b2fa;
+}
+
+/* 📱 MOBILE FIX */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: row;     /* 🔥 column hatao */
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .download-btn {
+    padding: 8px 14px;
+    font-size: 12px;
+    width: auto;   /* 🔥 full width hatao */
+  }
+}

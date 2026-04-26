@@ -1,0 +1,80 @@
+/* SECTION */
+.contact-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* TOP BUTTON */
+
+
+/* MOBILE IMAGE */
+.mobile-box img {
+  width: 260px;
+  margin: auto;
+  display: block;
+
+  /* fade effect */
+  mask-image: linear-gradient(to bottom, black 70%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent);
+}
+
+/* CTA BUTTON */
+.start-btn {
+  background: #2f6f68;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  margin: 20px 0;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* STORE SECTION */
+.store-section {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+/* STORE */
+.store {
+  display: flex;
+  flex-direction: column;   /* 🔥 vertical */
+  align-items: center;
+  gap: 8px;
+}
+
+/* ICON SIZE BIG */
+.store img {
+  width: 60px;   /* 🔥 bada icon */
+}
+
+/* RATING */
+.rating {
+  text-align: center;
+}
+
+/* NUMBER */
+.rating span:first-child {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* STARS */
+.stars {
+  font-size: 0.9rem;
+  color: #f4b400;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .mobile-box img {
+    width: 200px;
+  }
+
+  .store-section {
+    gap: 20px;
+  }
+}
